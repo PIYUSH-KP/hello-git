@@ -1,0 +1,78 @@
+	 	
+git init : Create a new local repository
+	
+git clone /path/to/repository : Check out a repository
+example:	
+git clone username@host:/path/to/repository
+
+git add <filename> : Set Single File to Commit
+git add .  : Set Everything to Commit
+ 	
+git commit -m "Commit message"
+git commit -a  : Commit any files you've added with git add, and also commit any files you've changed since then	
+
+Push : Send changes to the master branch of your remote repository
+git push origin master
+
+Status: List the files changed and those still needed to be add or commit	
+git status
+
+git remote add origin <server> : Connect to a remote repository	If you haven't connected your local repository to a remote server, add the server to be able to push to it
+
+git remote -v :  List all currently configured remote repositories
+
+
+Branches	: Create a new branch and switch to it:	
+git checkout -b <branchname>
+
+
+Switch from one branch to another:	
+git checkout <branchname>
+
+
+
+List all the branches in your repo, and also tell you what branch you're currently in:	
+git branch
+
+Delete the feature branch:	
+git branch -d <branchname>
+
+Push the branch to your remote repository, so others can use it:	
+git push origin <branchname>
+
+Push all branches to your remote repository:	
+git push --all origin
+
+Delete a branch on your remote repository:	
+git push origin :<branchname>
+
+git pull: Update from the remote repository	Fetch and merge changes on the remote server to your working directory:	
+
+
+git merge <branchname>: To merge a different branch into your active branch:	
+
+
+
+View all the merge conflicts:
+View the conflicts against the base file:
+
+Preview changes, before merging:
+git diff
+git diff --base <filename>
+git diff <sourcebranch> <targetbranch>
+
+
+git log
+
+Push all tags to remote repository:	
+git push --tags origin
+
+Undo local changes	If you mess up, you can replace the changes in your working tree with the last content in head:
+Changes already added to the index, as well as new files, will be kept.
+git checkout -- <filename>
+
+
+git reset --hard origin/master
+
+
+***************more commands to be added*************
